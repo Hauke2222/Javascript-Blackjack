@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body onload="generateDeckOfCards()">
+
+  <div class="content">
+
+    <h2>Cards dealer</h3>
+      <p id="dealer-score"></p>
+
+    <div class="row">
+      <img id="cards-dealer1">
+      <img id="cards-dealer2">
+      <img id="cards-dealer3">
+      <img id="cards-dealer4">
+      <img id="cards-dealer5">
+      <img id="cards-dealer6">
+      <img id="cards-dealer7">
+      <img id="cards-dealer8">
+      <img id="cards-dealer9">
+      <img id="cards-dealer10">
+      <img id="cards-dealer11">
+      <img id="cards-dealer12">
+    </div>
+
+    <h2>Cards player</h3>
+      <p id="player-score"></p>
+    
+    <div class="row">
+      <img id="cards-player1">
+      <img id="cards-player2">
+      <img id="cards-player3">
+      <img id="cards-player4">
+      <img id="cards-player5">
+      <img id="cards-player6">
+      <img id="cards-player7">
+      <img id="cards-player8">
+      <img id="cards-player9">
+      <img id="cards-player10">
+      <img id="cards-player11">
+      <img id="cards-player12">
+    </div>
+
+    <div class="row">
+      <button class="button" id="draw-card" onclick="hit()">Trek een kaart</button>
+      <button class="button" id="pass" onclick="pass()">Pas</button>
+      <button class="button" onclick="resetGame()">Herstart</button>
+    </div>
+    <p id="result"></p>
+    
+  </div>
+
+
+  <script src="main.js"></script>
+</body>
+
+</html>

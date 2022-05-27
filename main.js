@@ -1,5 +1,4 @@
 const cardSuit = ['Clubs', 'Diamonds', 'Hearts', 'Spades'];
-
 const cardRank = [
     { 'rank': '2', 'value': 2 },
     { 'rank': '3', 'value': 3 },
@@ -130,7 +129,7 @@ function checkForWin() {
         document.getElementById('pass').disabled=true;
     }
     if (passBoolean && (calculateScore(cardsDealer) === calculateScore(cardsPlayer))) {
-        document.getElementById('result').innerHTML = 'gelijkspel';
+        document.getElementById('result').innerHTML = 'tie';
         document.getElementById('draw-card').disabled=true;
         document.getElementById('pass').disabled=true;
     }

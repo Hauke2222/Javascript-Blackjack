@@ -9,12 +9,11 @@
 
 <body onload="generateDeckOfCards()">
 
-  <div class="content">
+  <div>
 
     <h2>Cards dealer</h3>
       <p id="dealer-score"></p>
 
-    <div class="row">
       <img id="cards-dealer1">
       <img id="cards-dealer2">
       <img id="cards-dealer3">
@@ -27,12 +26,12 @@
       <img id="cards-dealer10">
       <img id="cards-dealer11">
       <img id="cards-dealer12">
-    </div>
+  </div>
+
+  <div>
 
     <h2>Cards player</h3>
       <p id="player-score"></p>
-    
-    <div class="row">
       <img id="cards-player1">
       <img id="cards-player2">
       <img id="cards-player3">
@@ -45,17 +44,17 @@
       <img id="cards-player10">
       <img id="cards-player11">
       <img id="cards-player12">
-    </div>
-
-    <div class="row">
-      <button class="button" id="draw-card" onclick="hit()">Draw a card</button>
-      <button class="button" id="pass" onclick="pass()">Pas</button>
-      <button class="button" onclick="resetGame()">Restart</button>
-    </div>
-    <p id="result"></p>
-    
   </div>
 
+  <div>
+    <button id="draw-card" onclick="hit()">Draw a card</button>
+    <button id="pass" onclick="pass()">Pas</button>
+    <button onclick="resetGame()">Restart</button>
+  </div>
+
+  <em>
+    <strong id="result"></strong>
+  </em>
 
   <script src="main.js"></script>
 </body>
